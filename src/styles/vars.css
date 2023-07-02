@@ -1,0 +1,21 @@
+:root {
+  --c-primary: #03bab1;
+  --c-secondary: #0059d1;
+  --c-danger: #f87171;
+
+  --c-bg-base: #f2f3f8;
+
+  --c-text-base: #6b7280;
+  --c-text-highlight: #272727;
+
+  --c-border-base: #d1d5db;
+
+  --un-prose-links: var(--c-primary);
+}
+
+html.dark {
+  --c-bg-base: #110F0D;
+
+  --c-text-base: #767688;
+  --c-text-highlight: #efefef;
+}

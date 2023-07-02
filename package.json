@@ -1,0 +1,76 @@
+{
+  "name": "@moujinet/vue3-starter",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.6.5",
+  "author": "Allen Luo <luoyi@mouji.net>",
+  "license": "MIT",
+  "scripts": {
+    "commit": "czg",
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint .",
+    "postinstall": "simple-git-hooks"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.53.4",
+    "@vueuse/core": "^10.2.1",
+    "@vueuse/head": "^1.1.26",
+    "vue": "^3.3.4",
+    "vue-router": "4.2.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.6",
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@iconify/json": "^2.2.85",
+    "@types/markdown-it-link-attributes": "^3.0.1",
+    "@types/node": "^20.3.3",
+    "@types/nprogress": "^0.2.0",
+    "@vitejs/plugin-legacy": "^4.0.5",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "autoprefixer": "^10.4.14",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.6.1",
+    "czg": "^1.6.1",
+    "eslint": "^8.44.0",
+    "lint-staged": "^13.2.3",
+    "markdown-it-link-attributes": "^4.0.1",
+    "markdown-it-shiki": "^0.9.0",
+    "nprogress": "^0.2.0",
+    "postcss": "^8.4.24",
+    "postcss-nested": "^6.0.1",
+    "simple-git-hooks": "^2.8.1",
+    "terser": "^5.18.2",
+    "typescript": "^5.1.6",
+    "unocss": "^0.53.4",
+    "unplugin-auto-import": "^0.16.4",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.3.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-inspect": "^0.7.32",
+    "vite-plugin-mkcert": "^1.16.0",
+    "vite-plugin-mock": "^3.0.0",
+    "vite-plugin-vue-markdown": "^0.23.5",
+    "vite-plugin-vue-routes-generate": "^0.0.3",
+    "vitest": "^0.32.2",
+    "vue-tsc": "^1.8.3"
+  },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}
