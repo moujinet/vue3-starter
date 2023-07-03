@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -21,12 +22,13 @@
     "noFallthroughCasesInSwitch": true,
 
     "typeRoots": [
+      "./node_modules",
       "node_modules/@types",
       "types"
     ],
 
     "types": [
-      "vitest",
+      "vitest/globals",
       "vite/client",
       "vite-plugin-vue-routes-generate/client"
     ],
