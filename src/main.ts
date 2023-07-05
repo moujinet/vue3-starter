@@ -8,10 +8,7 @@ import routes from '~routes'
 
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
-
-import './styles/markdown.css'
-import './styles/global.css'
-import './styles/vars.css'
+import './styles/main.css'
 
 const head = createHead()
 const router = createRouter({

@@ -1,3 +1,7 @@
+@import './vars.css';
+@import './markdown.css';
+@import './color-mode.css';
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -5,25 +9,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
-}
-
-/* Color Mode transition */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
-::view-transition-old(root) {
-  z-index: 1;
-}
-::view-transition-new(root) {
-  z-index: 2147483646;
-}
-.dark::view-transition-old(root) {
-  z-index: 2147483646;
-}
-.dark::view-transition-new(root) {
-  z-index: 1;
 }
 
 html,
