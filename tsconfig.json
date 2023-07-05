@@ -21,30 +21,19 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "typeRoots": [
-      "./node_modules",
-      "node_modules/@types",
-      "types"
-    ],
-
     "types": [
-      "vitest/globals",
+      "vitest",
       "vite/client",
       "vite-plugin-vue-routes-generate/client"
     ],
 
     "paths": {
       "@/*": ["./src/*"],
-      "#/*": ["./types/*"],
       "~/*": ["./*"]
     }
   },
-  "include": [
-    "types/**/*.d.ts",
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.md",
-    "src/**/*.vue"
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

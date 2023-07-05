@@ -7,10 +7,10 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    CommonHeader: typeof import('./../src/components/common/CommonHeader.vue')['default']
-    CommonLogo: typeof import('./../src/components/common/CommonLogo.vue')['default']
-    NavItem: typeof import('./../src/components/nav/NavItem.vue')['default']
-    NavMain: typeof import('./../src/components/nav/NavMain.vue')['default']
+    CommonHeader: typeof import('./components/common/CommonHeader.vue')['default']
+    CommonLogo: typeof import('./components/common/CommonLogo.vue')['default']
+    NavItem: typeof import('./components/nav/NavItem.vue')['default']
+    NavMain: typeof import('./components/nav/NavMain.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

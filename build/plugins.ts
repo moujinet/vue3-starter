@@ -54,7 +54,7 @@ export function createVitePlugins(env: IViteEnv, isBuild: boolean) {
         '@vueuse/core',
         'pinia',
       ],
-      dts: 'types/auto-imports.d.ts',
+      dts: 'src/auto-imports.d.ts',
       dirs: [
         'src/composables',
       ],
@@ -71,7 +71,7 @@ export function createVitePlugins(env: IViteEnv, isBuild: boolean) {
           names: ['RouterLink', 'RouterView'],
         },
       ],
-      dts: 'types/components.d.ts',
+      dts: 'src/components.d.ts',
     }),
 
     // https://github.com/antfu/unocss

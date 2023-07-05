@@ -1,8 +1,3 @@
-/// <reference types="vitest" />
-/// <reference types="vite/client" />
-/// <reference types="vite-plugin-vue-routes-generate/client" />
-
-// with vite-plugin-vue-markdown, markdown files can be treated as Vue components
 declare module '*.md' {
   import { type DefineComponent } from 'vue'
   const component: DefineComponent<{}, {}, any>

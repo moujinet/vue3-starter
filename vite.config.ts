@@ -11,13 +11,13 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
   const env = loadEnv(mode, root)
   const viteEnv = wrapperEnv(env)
+  const isBuild = command === 'build'
   const {
     VITE_SERVER_PROXY,
     VITE_SERVER_PORT,
     VITE_ROOT_PATH,
     VITE_USE_MKCERT,
   } = viteEnv
-  const isBuild = command === 'build'
 
   return {
     base: VITE_ROOT_PATH,

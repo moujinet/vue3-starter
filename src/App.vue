@@ -1,7 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title: 'Vue3 + Vite Starter Template',
+  title: import.meta.env.APP_TITLE,
   meta: [
+    {
+      name: 'description',
+      content: import.meta.env.APP_DESCRIPTION,
+    },
     {
       name: 'theme-color',
       content: computed(() => isDark.value ? '#03BAB1' : '#fff'),
