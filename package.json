@@ -56,6 +56,7 @@
     "vite-plugin-inspect": "^0.7.32",
     "vite-plugin-mkcert": "^1.16.0",
     "vite-plugin-mock": "^3.0.0",
+    "vite-plugin-vue-devtools": "^0.4.12",
     "vite-plugin-vue-markdown": "^0.23.5",
     "vite-plugin-vue-routes-generate": "^0.0.3",
     "vitest": "^0.32.4",
