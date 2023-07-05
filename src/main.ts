@@ -10,6 +10,7 @@ import '@unocss/reset/tailwind.css'
 import 'uno.css'
 import './styles/main.css'
 
+const pinia = createPinia()
 const head = createHead()
 const router = createRouter({
   history: createWebHistory(),
@@ -29,4 +30,5 @@ router.afterEach(() => {
 createApp(App)
   .use(router)
   .use(head)
+  .use(pinia)
   .mount('#app')

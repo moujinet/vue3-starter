@@ -1,8 +1,8 @@
 <template>
-  <span aspect="1/1" shrink-0 w-12 h-12>
+  <span aspect="1/1" h-12 w-12 shrink-0>
     <svg
       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="128" height="128" viewBox="0 0 128 128"
-      w-12 h-12
+      h-12 w-12
     >
       <defs>
         <clipPath id="svg-logo">

@@ -4,11 +4,11 @@ const router = useRouter()
 
 <template>
   <main flex="~ col center" h-screen>
-    <div text="5xl primary" mb-3 i-solar-emoji-funny-square-outline />
+    <div text="5xl primary" i-solar-emoji-funny-square-outline mb-3 />
     <RouterView />
     <div mt-8>
       <button
-        text-sm px-8 py-2 bg-primary text-white rounded hover:op-80
+        rounded bg-primary px-8 py-2 text-sm text-white hover:op-80
         @click="router.back()"
       >
         Back

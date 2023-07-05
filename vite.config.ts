@@ -62,6 +62,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         'vue-router',
         '@vueuse/head',
         '@vueuse/core',
+        'pinia',
       ],
       dts: 'types/auto-imports.d.ts',
       dirs: [
