@@ -2,10 +2,6 @@
 title: How to use
 ---
 
-<CommonHeader>
-  How to use
-</CommonHeader>
-
 #### 安装
 
 ```bash

@@ -17,15 +17,13 @@ export default defineConfig({
       secondary: {
         DEFAULT: 'var(--c-secondary)',
       },
-      danger: {
-        DEFAULT: 'var(--c-danger)',
-      },
     },
   },
   shortcuts: [
     {
       // text
       'text-default': 'text-$c-text-base',
+      'text-secondary': 'text-$c-text-secondary',
       'text-highlight': 'text-$c-text-highlight',
 
       // background
@@ -38,7 +36,6 @@ export default defineConfig({
       'text-link-base': 'text-default hover:text-$c-primary',
       'text-link-primary': 'text-primary hover:text-$c-primary hover:underline',
       'text-link-secondary': 'text-secondary hover:text-$c-secondary',
-      'text-link-danger': 'text-danger hover:text-$c-danger',
 
       // utils
       'flex-center': 'items-center justify-center',

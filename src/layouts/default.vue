@@ -1,11 +1,8 @@
 <template>
-  <main py-10>
-    <div flex="~ col center" py-10>
+  <main h-full>
+    <HeaderBar />
+    <div p-5>
       <RouterView />
-    </div>
-
-    <div flex="~ col center">
-      <NavMain />
     </div>
   </main>
 </template>

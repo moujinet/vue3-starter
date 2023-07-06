@@ -13,10 +13,10 @@
 }
 
 .shiki-light {
-  background: #f8f8f8 !important;
+  background: #e5e7eb !important;
 }
 .shiki-dark {
-  background: #0e0e0e !important;
+  background: #111827 !important;
 }
 
 html.dark .shiki-light {

@@ -83,7 +83,12 @@ export function createVitePlugins(env: IViteEnv, isBuild: boolean) {
       wrapperClasses: 'prose m-auto text-left',
       headEnabled: true,
       markdownItSetup(md) {
-        md.use(Shiki)
+        md.use(Shiki, {
+          theme: {
+            light: 'vitesse-light',
+            dark: 'vitesse-dark',
+          },
+        })
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {

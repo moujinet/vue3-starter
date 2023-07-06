@@ -4,7 +4,7 @@ const router = useRouter()
 
 <template>
   <main flex="~ col center" h-screen>
-    <div text="5xl primary" i-solar-emoji-funny-square-outline mb-3 />
+    <div text="5xl" i-solar-emoji-funny-square-outline mb-3 />
     <RouterView />
     <div mt-8>
       <button
