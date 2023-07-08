@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <a href="https://verdant-bubblegum-a40d02.netlify.app/" target="_blank">Online Demo</a>
+  <a href="https://my-vue3-starter.netlify.app/" target="_blank">Online Demo</a>
 </p>
 
 ## Features
